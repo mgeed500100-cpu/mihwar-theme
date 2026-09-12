@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "header": {
+      "cart": "Cart"
+    },
+    "appBanner": {
+      "download_now": "download now"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "Cart Options"
+    },
+    "products": {
+      "barcode": "الباركود"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "You can edit or delete your review within",
+      "edit_period_ended": "The period to edit the review has ended",
+      "delete_period_ended": "The period to delete the review has ended",
+      "days_since_added": "days since it was added",
+      "option_name": "Option name",
+      "option_content": "Content"
+    }
+  },
+  "common": {
+    "bank_offer_sub_title_multiple": "Pay for your purchases via one of the following bank cards and get the specified discount",
+    "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount"
+  },
+  "mihwar": {
+    "search_parts": "Find your part",
+    "shop_all": "Shop all parts",
+    "store_advantages": "Store advantages",
+    "available_parts": "available parts",
+    "fast_dispatch": "fast dispatch",
+    "secure_purchase": "secure purchase",
+    "right_part": "The right fit",
+    "choose_vehicle": "Your vehicle",
+    "select_vehicle": "Choose make, model and year",
+    "show_compatible": "Show compatible parts",
+    "fitment_note": "Compatibility follows the links and categories configured by the merchant; verify the VIN when needed.",
+    "quick_access": "Quick access",
+    "explore_category": "Explore category",
+    "curated_parts": "Curated picks",
+    "search_by_sku": "Search by part number",
+    "compare_title": "Compare with confidence",
+    "compare_description": "Place products side-by-side when the store comparison feature is enabled.",
+    "trusted_names": "Trusted quality"
+  }
+}

@@ -1,0 +1,19 @@
+<section component-id="{{ componentId }}" class="mihwar-section mihwar-fitment" data-mihwar-reveal data-mihwar-vehicle>
+  <div class="container">
+    <div class="mihwar-heading">
+      <div><span class="mihwar-kicker">{{ trans('mihwar.right_part') }}</span><h2>{{ component.title }}</h2></div>
+      <p>{{ component.description }}</p>
+    </div>
+    <div class="mihwar-fitment__panel">
+      <label for="vehicle-{{ componentId }}">{{ trans('mihwar.choose_vehicle') }}</label>
+      <select id="vehicle-{{ componentId }}">
+        <option value="">{{ trans('mihwar.select_vehicle') }}</option>
+        {% for vehicle in component.vehicles %}
+          <option value="{{ loop.index }}" data-url="{{ vehicle.url }}">{{ vehicle.make }} — {{ vehicle.model }} — {{ vehicle.year }}</option>
+        {% endfor %}
+      </select>
+      <button type="button" class="mihwar-button" data-vehicle-go disabled>{{ trans('mihwar.show_compatible') }}</button>
+      <small>{{ trans('mihwar.fitment_note') }}</small>
+    </div>
+  </div>
+</section>

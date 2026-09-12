@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "header": {
+      "cart": "السلة"
+    },
+    "appBanner": {
+      "download_now": "حمله الان"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "خيارات السلة"
+    },
+    "products": {
+      "barcode": "الباركود"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "يمكنك تعديل أو حذف تقييمك خلال",
+      "edit_period_ended": "تم انتهاء المدة المحددة لتعديل التقييم",
+      "delete_period_ended": "تم انتهاء المدة المحددة لحذف التقييم",
+      "days_since_added": "أيام من إضافته",
+      "option_name": "الخيار",
+      "option_content": "المحتوى"
+    }
+  },
+  "common": {
+    "bank_offer_sub_title_multiple": "ادفع قيمة مشترياتك عبر أحد البطاقات البنكة التالية واحصل على الخصم المحدد",
+    "bank_offer_sub_title_single": "ادفع قيمة مشترياتك عبر أحد بطاقات بنك :bank_name واحصل على خصم بنسبة "
+  },
+  "mihwar": {
+    "search_parts": "ابحث عن قطعتك",
+    "shop_all": "تسوق كل القطع",
+    "store_advantages": "مزايا المتجر",
+    "available_parts": "قطعة متاحة",
+    "fast_dispatch": "تجهيز سريع",
+    "secure_purchase": "شراء موثوق",
+    "right_part": "القطعة المناسبة",
+    "choose_vehicle": "بيانات سيارتك",
+    "select_vehicle": "اختر الشركة والموديل والسنة",
+    "show_compatible": "اعرض القطع المناسبة",
+    "fitment_note": "التوافق يعتمد على الروابط والتصنيفات التي يضبطها التاجر؛ تحقق من رقم الهيكل عند الحاجة.",
+    "quick_access": "وصول سريع",
+    "explore_category": "استكشف القسم",
+    "curated_parts": "اختياراتنا",
+    "search_by_sku": "بحث برقم القطعة",
+    "compare_title": "قارن قبل أن تقرر",
+    "compare_description": "ضع المنتجات جنباً إلى جنب عبر ميزة المقارنة عند تفعيلها في المتجر.",
+    "trusted_names": "جودة معروفة"
+  }
+}

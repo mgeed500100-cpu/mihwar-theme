@@ -1,0 +1,98 @@
+:root {
+  --mihwar-accent: #ff6a1a;
+  --mihwar-surface: #101316;
+  --mihwar-panel: #181c20;
+  --mihwar-line: rgba(255, 255, 255, .1);
+  --mihwar-text: #f6f7f8;
+  --mihwar-muted: #a6adb5;
+}
+
+.theme-mihwar {
+  background: #f4f5f6;
+  color: #15181b;
+  --color-primary: var(--mihwar-accent);
+
+  .mihwar-header .top-navbar { background: var(--mihwar-surface); color: #fff; }
+  .mihwar-header .main-nav-container { box-shadow: 0 10px 35px rgba(0, 0, 0, .08); }
+  .mihwar-header .navbar-brand img { max-height: 54px; }
+  .s-product-card-entry { border: 1px solid #e7e9eb; border-radius: 20px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+  .s-product-card-entry:hover { transform: translateY(-5px); box-shadow: 0 18px 50px rgba(16, 19, 22, .12); }
+  footer.store-footer { background: var(--mihwar-surface); color: #fff; }
+}
+
+[data-mihwar-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.75,.25,1); }
+[data-mihwar-reveal].is-visible { opacity: 1; transform: none; }
+
+.mihwar-kicker { display: inline-flex; align-items: center; gap: 8px; color: var(--mihwar-accent); font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.mihwar-kicker::before { content: ''; width: 30px; height: 2px; background: currentColor; }
+.mihwar-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 24px; border-radius: 12px; background: var(--mihwar-accent); color: #fff; font-weight: 800; transition: transform .2s ease, filter .2s ease; }
+.mihwar-button:hover { color: #fff; transform: translateY(-2px); filter: brightness(1.08); }
+.mihwar-button:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.mihwar-button--ghost { background: transparent; border: 1px solid rgba(255,255,255,.25); }
+.mihwar-section { padding: 72px 0; }
+.mihwar-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 30px; }
+.mihwar-heading h2 { margin-top: 8px; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; }
+.mihwar-heading > p { max-width: 520px; color: #6d747b; }
+.mihwar-text-button { display: inline-flex; align-items: center; gap: 8px; color: #30353a; font-weight: 800; white-space: nowrap; }
+.mihwar-text-button:hover { color: var(--mihwar-accent); }
+
+.mihwar-hero { position: relative; min-height: 670px; overflow: hidden; color: var(--mihwar-text); background: radial-gradient(circle at 78% 45%, #343b42 0, #181c20 33%, var(--mihwar-surface) 68%); }
+.mihwar-hero__media { position: absolute; inset: 0; background-position: center; background-size: cover; opacity: .5; mix-blend-mode: luminosity; }
+.mihwar-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,19,22,.98) 0%, rgba(16,19,22,.82) 44%, rgba(16,19,22,.15) 100%); }
+[dir='ltr'] .mihwar-hero__media::after { background: linear-gradient(-90deg, rgba(16,19,22,.98) 0%, rgba(16,19,22,.82) 44%, rgba(16,19,22,.15) 100%); }
+.mihwar-hero__grid { position: absolute; inset: 0; opacity: .13; background-image: linear-gradient(var(--mihwar-line) 1px, transparent 1px), linear-gradient(90deg, var(--mihwar-line) 1px, transparent 1px); background-size: 70px 70px; mask-image: linear-gradient(to bottom, #000, transparent); }
+.mihwar-hero__content { position: relative; min-height: 670px; display: flex; flex-direction: column; justify-content: center; padding-top: 80px; padding-bottom: 48px; }
+.mihwar-hero__copy { max-width: 740px; }
+.mihwar-hero h2 { margin: 18px 0; font-size: clamp(2.6rem, 7vw, 6.6rem); font-weight: 950; line-height: .98; letter-spacing: -.04em; }
+.mihwar-hero p { max-width: 610px; color: var(--mihwar-muted); font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.9; }
+.mihwar-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.mihwar-hero__specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 62px; max-width: 680px; background: var(--mihwar-line); border: 1px solid var(--mihwar-line); }
+.mihwar-hero__specs span { display: flex; flex-direction: column; padding: 18px 22px; background: rgba(16,19,22,.72); color: var(--mihwar-muted); font-size: .78rem; }
+.mihwar-hero__specs strong { color: #fff; font-size: 1.35rem; }
+
+.mihwar-fitment { margin-top: -32px; position: relative; z-index: 2; }
+.mihwar-fitment__panel { display: grid; grid-template-columns: auto minmax(240px, 1fr) auto; align-items: center; gap: 16px; padding: 24px; border-radius: 22px; background: #fff; box-shadow: 0 22px 65px rgba(16,19,22,.12); }
+.mihwar-fitment__panel label { font-weight: 900; }
+.mihwar-fitment__panel select { width: 100%; min-height: 50px; border: 1px solid #dfe2e4; border-radius: 12px; background: #fafafa; }
+.mihwar-fitment__panel small { grid-column: 2 / -1; color: #7c838a; }
+
+.mihwar-bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.mihwar-bento__item { position: relative; grid-column: span 4; min-height: 230px; display: flex; align-items: end; overflow: hidden; border-radius: 22px; background: var(--mihwar-panel); color: #fff; padding: 24px; isolation: isolate; }
+.mihwar-bento__item:nth-child(1), .mihwar-bento__item:nth-child(6) { grid-column: span 6; min-height: 310px; }
+.mihwar-bento__item img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform .6s ease; }
+.mihwar-bento__item::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(8,10,12,.94), rgba(8,10,12,.06) 75%); }
+.mihwar-bento__item:hover { color: #fff; }
+.mihwar-bento__item:hover img { transform: scale(1.06); }
+.mihwar-bento__item span { display: flex; flex-direction: column; flex: 1; }
+.mihwar-bento__item strong { font-size: 1.25rem; }
+.mihwar-bento__item small { color: #c8cdd1; }
+.mihwar-bento__item i { color: var(--mihwar-accent); font-size: 1.3rem; }
+
+.mihwar-products { background: #fff; }
+.mihwar-compare-note { margin-top: 24px; display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 1px solid #eceeef; border-radius: 16px; background: #f8f9fa; }
+.mihwar-compare-note i { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: var(--mihwar-surface); color: var(--mihwar-accent); }
+.mihwar-compare-note span { display: flex; flex-direction: column; }
+.mihwar-compare-note span:not(strong) { color: #687078; }
+
+.mihwar-brands { overflow: hidden; background: var(--mihwar-surface); color: #fff; }
+.mihwar-brands .mihwar-text-button { color: #fff; }
+.mihwar-brands__track { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 12px; }
+.mihwar-brands__track a { min-height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--mihwar-line); border-radius: 16px; color: #fff; background: rgba(255,255,255,.03); transition: border-color .25s ease, background .25s ease; }
+.mihwar-brands__track a:hover { color: #fff; border-color: var(--mihwar-accent); background: rgba(255,106,26,.08); }
+.mihwar-brands__track img { width: 88px; height: 48px; object-fit: contain; filter: grayscale(1) brightness(2); }
+
+@media (max-width: 767px) {
+  .mihwar-section { padding: 52px 0; }
+  .mihwar-heading { align-items: start; flex-direction: column; }
+  .mihwar-hero, .mihwar-hero__content { min-height: 610px; }
+  .mihwar-hero__specs { grid-template-columns: 1fr; width: 100%; }
+  .mihwar-hero__specs span { flex-direction: row; align-items: center; justify-content: space-between; }
+  .mihwar-fitment__panel { grid-template-columns: 1fr; }
+  .mihwar-fitment__panel small { grid-column: auto; }
+  .mihwar-bento { grid-template-columns: 1fr; }
+  .mihwar-bento__item, .mihwar-bento__item:nth-child(1), .mihwar-bento__item:nth-child(6) { grid-column: auto; min-height: 220px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-mihwar-reveal], .mihwar-bento__item img, .mihwar-button, .theme-mihwar .s-product-card-entry { opacity: 1; transform: none; transition: none; }
+}

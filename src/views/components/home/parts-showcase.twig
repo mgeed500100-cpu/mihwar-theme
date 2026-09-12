@@ -1,0 +1,12 @@
+<section component-id="{{ componentId }}" class="mihwar-section mihwar-products" data-mihwar-reveal>
+  <div class="container">
+    <div class="mihwar-heading"><div><span class="mihwar-kicker">{{ trans('mihwar.curated_parts') }}</span><h2>{{ component.title }}</h2></div><button type="button" class="mihwar-text-button" data-mihwar-search>{{ trans('mihwar.search_by_sku') }} <i class="sicon-search"></i></button></div>
+    <salla-products-slider
+      source="{{ component.products|length ? 'selected' : 'latest' }}"
+      {% if component.products|length %}source-value="[{{ component.products|map((product) => product.id)|join(',') }}]"{% endif %}
+      block-title=" "
+      slider-id="mihwar-products-{{ position }}">
+    </salla-products-slider>
+    <div class="mihwar-compare-note"><i class="sicon-repeat"></i><span><strong>{{ trans('mihwar.compare_title') }}</strong>{{ trans('mihwar.compare_description') }}</span></div>
+  </div>
+</section>

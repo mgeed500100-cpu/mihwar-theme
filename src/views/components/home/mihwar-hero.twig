@@ -1,0 +1,23 @@
+{% set hero_image = component.image %}
+<section component-id="{{ componentId }}" class="mihwar-hero" data-mihwar-reveal>
+  <div class="mihwar-hero__media"{% if hero_image %} style="background-image:url('{{ hero_image }}')"{% endif %}></div>
+  <div class="mihwar-hero__grid" aria-hidden="true"></div>
+  <div class="container mihwar-hero__content">
+    <div class="mihwar-hero__copy">
+      {% if component.badge %}<span class="mihwar-kicker">{{ component.badge }}</span>{% endif %}
+      <h2>{{ component.title }}</h2>
+      <p>{{ component.description }}</p>
+      <div class="mihwar-hero__actions">
+        <button type="button" class="mihwar-button" data-mihwar-search>
+          <i class="sicon-search"></i> {{ component.cta|default(trans('mihwar.search_parts')) }}
+        </button>
+        <a class="mihwar-button mihwar-button--ghost" href="{{ link('products') }}">{{ trans('mihwar.shop_all') }}</a>
+      </div>
+    </div>
+    <div class="mihwar-hero__specs" aria-label="{{ trans('mihwar.store_advantages') }}">
+      <span><strong>+10K</strong>{{ trans('mihwar.available_parts') }}</span>
+      <span><strong>24h</strong>{{ trans('mihwar.fast_dispatch') }}</span>
+      <span><strong>100%</strong>{{ trans('mihwar.secure_purchase') }}</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Product image placeholder</title>
+  <desc id="desc">A neutral automotive-style placeholder used when no product image is available.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#181c20"/>
+      <stop offset="1" stop-color="#0d0f11"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#surface)"/>
+  <g fill="none" stroke="#ff6a1a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M232 358h336l-28-86c-7-22-28-37-51-37H311c-23 0-44 15-51 37l-28 86Z"/>
+    <path d="M204 358h392v82H204z"/>
+    <circle cx="280" cy="440" r="33" fill="#101316"/>
+    <circle cx="520" cy="440" r="33" fill="#101316"/>
+    <path d="M260 310h280" opacity=".5"/>
+  </g>
+  <text x="400" y="525" fill="#a6adb5" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">MIHWAR</text>
+</svg>
