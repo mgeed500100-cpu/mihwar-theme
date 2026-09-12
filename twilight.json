@@ -292,7 +292,7 @@
       "icon": "sicon-image-carousel",
       "path": "home.enhanced-slider",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -394,7 +394,7 @@
       "icon": "sicon-layout-grid-rearrange",
       "path": "home.main-links",
       "image": "https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -793,7 +793,7 @@
           ]
         }
       ],
-      "is_default": false
+      "is_default": true
     },
     {
       "key": "b89edc4a-ce0b-468f-8323-2da48147bb32",
@@ -804,7 +804,7 @@
       "icon": "sicon-image",
       "path": "home.enhanced-square-banners",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -1022,7 +1022,7 @@
           "source": "brands"
         }
       ],
-      "is_default": false
+      "is_default": true
     },
     {
       "key": "541cc423-90c7-4230-8a33-a0342cfde4ad",
@@ -1033,7 +1033,7 @@
       "icon": "sicon-chat-bubbles",
       "path": "home.custom-testimonials",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/custom-testimonials.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -1138,274 +1138,6 @@
           "required": false,
           "minLength": 1,
           "maxLength": 30
-        }
-      ]
-    },
-    {
-      "key": "a70b2f4f-2585-4f56-a13a-37def98c1501",
-      "title": {
-        "ar": "محور: الواجهة السينمائية",
-        "en": "Mihwar: Cinematic hero"
-      },
-      "icon": "sicon-dashboard",
-      "path": "home.mihwar-hero",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "badge",
-          "type": "string",
-          "format": "text",
-          "label": "النص العلوي",
-          "value": "أداء يليق بطريقك",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان الرئيسي",
-          "value": "القطعة الصح. من أول مرة.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 80
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "ابحث برقم القطعة أو اكتشف القطع المناسبة لسيارتك بثقة وسرعة.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 240
-        },
-        {
-          "id": "cta",
-          "type": "string",
-          "format": "text",
-          "label": "نص زر البحث",
-          "value": "ابحث عن قطعتك",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 40
-        },
-        {
-          "id": "image",
-          "type": "string",
-          "format": "image",
-          "label": "صورة السيارة أو الخلفية",
-          "value": null,
-          "required": false,
-          "multilanguage": false,
-          "maxLength": 160
-        }
-      ]
-    },
-    {
-      "key": "7541ab24-b28a-485d-b077-f555902f1359",
-      "title": {
-        "ar": "محور: اختر سيارتك",
-        "en": "Mihwar: Vehicle finder"
-      },
-      "icon": "sicon-car",
-      "path": "home.vehicle-selector",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "اختر سيارتك، ونقرّب لك القطعة",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "أنشئ روابط جاهزة لكل سيارة تقود العميل إلى التصنيف أو نتيجة البحث المناسبة.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "vehicles",
-          "type": "collection",
-          "format": "collection",
-          "label": "السيارات",
-          "item_label": "سيارة",
-          "required": false,
-          "minLength": 0,
-          "maxLength": 30,
-          "value": [],
-          "fields": [
-            {
-              "id": "vehicles.make",
-              "type": "string",
-              "format": "text",
-              "label": "الشركة",
-              "value": null,
-              "required": true,
-              "multilanguage": false,
-              "maxLength": 40
-            },
-            {
-              "id": "vehicles.model",
-              "type": "string",
-              "format": "text",
-              "label": "الموديل",
-              "value": null,
-              "required": true,
-              "multilanguage": false,
-              "maxLength": 40
-            },
-            {
-              "id": "vehicles.year",
-              "type": "string",
-              "format": "text",
-              "label": "السنة أو الجيل",
-              "value": null,
-              "required": true,
-              "multilanguage": false,
-              "maxLength": 30
-            },
-            {
-              "id": "vehicles.url",
-              "type": "string",
-              "format": "text",
-              "label": "رابط النتائج",
-              "value": null,
-              "required": true,
-              "multilanguage": false,
-              "maxLength": 500
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "c05a65cc-11b4-49ed-ae9b-57bc3dfb09da",
-      "title": {
-        "ar": "محور: شبكة التصنيفات",
-        "en": "Mihwar: Category bento"
-      },
-      "icon": "sicon-grid",
-      "path": "home.category-bento",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "كل ما تحتاجه سيارتك",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "وصول بصري سريع للزيوت والفرامل والإضاءة والعناية والإكسسوارات.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "categories",
-          "type": "items",
-          "format": "dropdown-list",
-          "label": "التصنيفات",
-          "source": "categories",
-          "selected": [],
-          "options": [],
-          "value": [],
-          "multichoice": true,
-          "searchable": true,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 8
-        }
-      ]
-    },
-    {
-      "key": "90b9d18e-cdba-4d28-aac2-2bbd6f0617e4",
-      "title": {
-        "ar": "محور: قطع مختارة",
-        "en": "Mihwar: Parts showcase"
-      },
-      "icon": "sicon-box",
-      "path": "home.parts-showcase",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "قطع مختارة بعناية",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "products",
-          "type": "items",
-          "format": "dropdown-list",
-          "label": "المنتجات",
-          "source": "products",
-          "selected": [],
-          "options": [],
-          "value": [],
-          "multichoice": true,
-          "searchable": true,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 16
-        }
-      ]
-    },
-    {
-      "key": "3cbf2285-05bc-4a53-a8ce-ae0d74445a27",
-      "title": {
-        "ar": "محور: العلامات الموثوقة",
-        "en": "Mihwar: Trusted brands"
-      },
-      "icon": "sicon-award-ribbon",
-      "path": "home.mihwar-brands",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "ماركات يعرفها أهل الطريق",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 160
-        },
-        {
-          "id": "brands",
-          "type": "items",
-          "format": "dropdown-list",
-          "label": "العلامات التجارية",
-          "source": "brands",
-          "selected": [],
-          "options": [],
-          "value": [],
-          "multichoice": true,
-          "searchable": true,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 12
         }
       ]
     }
