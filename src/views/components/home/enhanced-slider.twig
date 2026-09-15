@@ -1,33 +1,75 @@
-{#
-| Variable                       | Type     | Description                                                                  |
-|--------------------------------|----------|------------------------------------------------------------------------------|
-| component                      | object   | Contains merchant settings for fields from twilight.json `component` section |
-| component.slides[].image       | string   | Image url                                                                    |
-| component.slides[].title       | ?string  |                                                                              |
-| component.slides[].description | ?string  |                                                                              |
-| component.slides               | object[] | list of slides                                                               |
-| position                       | int      | Sorting number start from zero                                               |
-#}
-<section component-id="{{ componentId }}" data-testid="store-home-slider" class="s-block s-block--hero-slider s-block--full-bg wide-placeholder"> 
-    <salla-slider 
-      id="main-slider-{{ position }}"
-      auto-play
-      static-when-single
-      slider-config='{"lazy":"false"}'
-      {{ component.slides|length > 1 ? '' : 'show-controls="false"' }}
-      type="fullwidth">
-        <div slot="items">
-            {% for slide in component.slides %}
-                <div class="swiper-slide w-full min-h-[300px] lg:min-h-[528px] bg-dark relative">
-					<div style="background-image: url({{ slide.image }});" class="{{ slide.without_overlay ? '' : 'overlay-bg' }} bg-cover bg-center absolute inset-0"></div>
-                    <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
-                        <div class=" w-4/6 text-center md:w-7/12 lg:w-5/12 text-white">
-                            <h2 data-swiper-parallax="-500" class="lg:text-title-size font-bold leading-tight mb-4">{{ slide.title }}</h2>
-                            <p data-swiper-parallax="-300" class="line-clamp-2 description">{{ slide.description }}</p>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
+{% set mihwar_slide = component.slides|first %}
+{% set hero_image = 'images/mihwar-inspection-car.webp'|asset %}
+{% set hero_title = mihwar_slide.title ?: trans('mihwar.default_hero_title') %}
+{% set hero_description = mihwar_slide.description ?: trans('mihwar.default_hero_description') %}
+
+<div component-id="{{ componentId }}" data-testid="store-home-slider">
+  <section class="mihwar-hero" data-mihwar-inspection>
+    <div class="mihwar-hero__ticks" aria-hidden="true"></div>
+    <div class="container mihwar-hero__layout">
+      <div class="mihwar-hero__copy">
+        <h2>{{ hero_title }}</h2>
+        <p>{{ hero_description }}</p>
+
+        <div class="mihwar-search-console" role="search" aria-labelledby="mihwar-search-title-{{ componentId }}">
+          <div class="mihwar-search-console__heading">
+            <div>
+              <strong id="mihwar-search-title-{{ componentId }}">{{ trans('mihwar.search_console_title') }}</strong>
+              <small>{{ trans('mihwar.search_console_hint') }}</small>
+            </div>
+          </div>
+          <salla-search data-testid="mihwar-hero-search" inline height="58"></salla-search>
         </div>
-    </salla-slider>
-</section> 
+
+        <div class="mihwar-hero__actions">
+          <a class="mihwar-button" href="{{ link('products') }}">
+            {{ trans('mihwar.shop_all') }}
+            <i class="sicon-arrow-left" aria-hidden="true"></i>
+          </a>
+          <a class="mihwar-text-link" href="#mihwar-vehicle-finder">
+            {{ trans('mihwar.choose_vehicle_action') }}
+            <i class="sicon-arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mihwar-inspection" role="group" aria-label="{{ trans('mihwar.inspection_stage') }}">
+        <div class="mihwar-inspection__head">
+          <span>{{ trans('mihwar.inspection_mode') }}</span>
+          <span class="mihwar-inspection__ready"><i aria-hidden="true"></i>{{ trans('mihwar.system_ready') }}</span>
+        </div>
+        <div class="mihwar-inspection__viewport">
+          <span class="mihwar-inspection__axis mihwar-inspection__axis--x" aria-hidden="true"></span>
+          <span class="mihwar-inspection__axis mihwar-inspection__axis--y" aria-hidden="true"></span>
+          <span class="mihwar-inspection__scan" aria-hidden="true"></span>
+          <img src="{{ hero_image }}" width="1400" height="933" fetchpriority="high" alt="">
+        </div>
+        <ul class="mihwar-inspection__capabilities" aria-label="{{ trans('mihwar.discovery_tools') }}">
+          <li>{{ trans('mihwar.direct_search') }}</li>
+          <li>{{ trans('mihwar.part_number') }}</li>
+          <li>{{ trans('mihwar.vehicle_guide') }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="mihwar-vehicle-finder" class="mihwar-section mihwar-fitment" data-mihwar-inspection>
+    <div class="container">
+      <div class="mihwar-section-heading">
+        <div><h2>{{ trans('mihwar.default_vehicle_title') }}</h2></div>
+        <p>{{ trans('mihwar.default_vehicle_description') }}</p>
+      </div>
+      <div class="mihwar-fitment__panel">
+        <div class="mihwar-fitment__empty">
+          <strong>{{ trans('mihwar.vehicle_empty_title') }}</strong>
+          <p>{{ trans('mihwar.vehicle_empty_text') }}</p>
+        </div>
+        <a class="mihwar-button" href="{{ link('products') }}">
+          {{ trans('mihwar.shop_all') }}
+          <i class="sicon-arrow-left" aria-hidden="true"></i>
+        </a>
+        <p class="mihwar-fitment__note"><i class="sicon-info" aria-hidden="true"></i>{{ trans('mihwar.fitment_note') }}</p>
+      </div>
+    </div>
+  </section>
+</div>

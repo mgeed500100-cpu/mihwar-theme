@@ -284,151 +284,6 @@
   ],
   "components": [
     {
-      "key": "a70b2f4f-2585-4f56-a13a-37def98c1501",
-      "title": {
-        "ar": "محور: منصة اكتشاف القطع",
-        "en": "Mihwar: Parts discovery station"
-      },
-      "icon": "sicon-search",
-      "path": "home.mihwar-hero",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان الرئيسي",
-          "value": "القطعة الصحيحة تبدأ من هنا",
-          "required": true,
-          "multilanguage": true,
-          "maxLength": 90
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "ابحث باسم المنتج أو رقم القطعة، أو ابدأ من بيانات سيارتك للوصول إلى النتائج التي يحددها المتجر.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 240
-        },
-        {
-          "id": "cta",
-          "type": "string",
-          "format": "text",
-          "label": "نص زر المنتجات",
-          "value": "استعرض كل المنتجات",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 40
-        },
-        {
-          "id": "image",
-          "type": "string",
-          "format": "image",
-          "label": "صورة السيارة",
-          "description": "يفضل استخدام صورة أفقية بخلفية شفافة أو داكنة",
-          "value": null,
-          "required": false
-        }
-      ]
-    },
-    {
-      "key": "7541ab24-b28a-485d-b077-f555902f1359",
-      "title": {
-        "ar": "محور: دليل المركبة",
-        "en": "Mihwar: Vehicle guide"
-      },
-      "icon": "sicon-car",
-      "path": "home.vehicle-selector",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "ابدأ من بيانات سيارتك",
-          "required": true,
-          "multilanguage": true,
-          "maxLength": 90
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "أضف خيارات تقود العميل إلى تصنيف أو نتيجة بحث محددة مسبقًا.",
-          "required": false,
-          "multilanguage": true,
-          "maxLength": 180
-        },
-        {
-          "id": "vehicles",
-          "type": "collection",
-          "format": "collection",
-          "label": "خيارات المركبات",
-          "item_label": "مركبة",
-          "required": false,
-          "maxLength": 30,
-          "value": null,
-          "fields": [
-            {
-              "id": "vehicles.make",
-              "type": "string",
-              "format": "text",
-              "label": "الشركة",
-              "required": true,
-              "maxLength": 40
-            },
-            {
-              "id": "vehicles.model",
-              "type": "string",
-              "format": "text",
-              "label": "الموديل",
-              "required": true,
-              "maxLength": 40
-            },
-            {
-              "id": "vehicles.year",
-              "type": "string",
-              "format": "text",
-              "label": "السنة أو الجيل",
-              "required": true,
-              "maxLength": 30
-            },
-            {
-              "id": "vehicles.url",
-              "type": "items",
-              "format": "variable-list",
-              "label": "وجهة النتائج",
-              "required": true,
-              "searchable": true,
-              "source": "custom",
-              "sources": [
-                {
-                  "label": "تصنيف",
-                  "key": "categories",
-                  "value": "categories"
-                },
-                {
-                  "label": "منتج",
-                  "key": "products",
-                  "value": "products"
-                },
-                {
-                  "label": "رابط خارجي",
-                  "key": "custom",
-                  "value": "custom"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
       "title": {
         "en": "Enhances Animated Images",
@@ -437,7 +292,7 @@
       "icon": "sicon-image-carousel",
       "path": "home.enhanced-slider",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -539,7 +394,7 @@
       "icon": "sicon-layout-grid-rearrange",
       "path": "home.main-links",
       "image": "https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -938,7 +793,7 @@
           ]
         }
       ],
-      "is_default": false
+      "is_default": true
     },
     {
       "key": "b89edc4a-ce0b-468f-8323-2da48147bb32",
@@ -949,7 +804,7 @@
       "icon": "sicon-image",
       "path": "home.enhanced-square-banners",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -1167,7 +1022,7 @@
           "source": "brands"
         }
       ],
-      "is_default": false
+      "is_default": true
     },
     {
       "key": "541cc423-90c7-4230-8a33-a0342cfde4ad",
@@ -1178,7 +1033,7 @@
       "icon": "sicon-chat-bubbles",
       "path": "home.custom-testimonials",
       "image": "https://cdn.salla.network/images/themes/raed/preview-images/custom-testimonials.png?v=1.1",
-      "is_default": false,
+      "is_default": true,
       "fields": [
         {
           "type": "static",

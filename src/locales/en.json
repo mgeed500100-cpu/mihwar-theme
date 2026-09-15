@@ -60,6 +60,10 @@
     "trusted_names": "Trusted quality",
     "open_menu": "Open menu",
     "vehicle_empty_title": "No vehicles added yet",
-    "vehicle_empty_text": "Browse all products, or use the search above to find your part."
+    "vehicle_empty_text": "Browse all products, or use the search above to find your part.",
+    "default_hero_title": "The right part starts here",
+    "default_hero_description": "Search by product name or part number to reach what you need quickly.",
+    "default_vehicle_title": "Start with your vehicle",
+    "default_vehicle_description": "Browse the catalog, then verify the part number and specifications before ordering."
   }
 }
