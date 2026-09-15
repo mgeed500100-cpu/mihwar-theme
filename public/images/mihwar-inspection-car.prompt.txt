@@ -1,0 +1,11 @@
+Use case: product-mockup
+Asset type: transparent hero cutout for an Arabic automotive ecommerce theme
+Primary request: create one premium unbranded modern performance sedan as a clean studio product cutout for the Mihwar storefront
+Scene/backdrop: genuinely transparent background, no floor, no environment
+Subject: three-quarter front view of a graphite-black sedan, facing slightly toward the viewer, complete car fully inside frame
+Style/medium: photoreal automotive studio photography, realistic paint, tires, glass and metal
+Composition/framing: wide landscape asset, car centered slightly to the right with generous transparent margin around every edge, no cropping
+Lighting/mood: controlled overhead inspection-bay strip lighting with a subtle warm rim light, precise and premium rather than cinematic haze
+Color palette: charcoal black, neutral metal highlights, tiny safety-orange reflection only
+Materials/textures: realistic satin metallic paint, crisp tire tread, clean glass
+Constraints: true alpha transparency; no logo; no brand badge; no license plate text; no typography; no numbers; no people; no watermark; no glow; no motion blur; no extra parts or tools

@@ -1,8 +1,0 @@
-<section component-id="{{ componentId }}" class="mihwar-section mihwar-brands" data-mihwar-reveal>
-  <div class="container">
-    <div class="mihwar-heading"><div><span class="mihwar-kicker">{{ trans('mihwar.trusted_names') }}</span><h2>{{ component.title }}</h2></div><a class="mihwar-text-button" href="{{ link('brands') }}">{{ trans('blocks.home.display_all') }}</a></div>
-    <div class="mihwar-brands__track">
-      {% for brand in component.brands %}<a href="{{ brand.url }}"><img loading="lazy" src="{{ brand.logo }}" alt="{{ brand.name }}"><span>{{ brand.name }}</span></a>{% endfor %}
-    </div>
-  </div>
-</section>

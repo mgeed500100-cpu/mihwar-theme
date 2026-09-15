@@ -55,7 +55,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#101315">
     {{ theme.settings.set('placeholder', 'images/placeholder.svg') }}
 
     <script defer data-cfasync="false" crossorigin="anonymous" src="{{ 'product-card.js'|asset }}"></script>
@@ -93,6 +94,7 @@
             /* Theme specific variables */
             --s-radius: .75rem;
             --mihwar-accent: {{ theme.color.primary }};
+            --mihwar-accent-strong: {{ theme.color.darker(0.18) }};
             --mihwar-surface: #101316;
         }
     </style>
@@ -104,10 +106,9 @@
   {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
   {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
   ">
+<a class="mihwar-skip-link" href="#main-content">{{ trans('mihwar.skip_to_content') }}</a>
 <noscript>
-    To get full functionality of this site you need to enable JavaScript. Here is how
-    <a href="https://www.enable-javascript.com/" rel="noreferrer"
-       target="_blank">To enable JavaScript on webpage</a>.
+    {{ trans('mihwar.javascript_required') }}
 </noscript>
 <div class="app-inner flex flex-col min-h-full">
     {% hook 'body:start' %}

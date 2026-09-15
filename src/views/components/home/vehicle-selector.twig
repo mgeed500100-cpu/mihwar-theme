@@ -1,19 +1,42 @@
-<section component-id="{{ componentId }}" class="mihwar-section mihwar-fitment" data-mihwar-reveal data-mihwar-vehicle>
+{% set has_vehicles = component.vehicles|length > 0 %}
+<section id="mihwar-vehicle-finder" component-id="{{ componentId }}" class="mihwar-section mihwar-fitment" data-mihwar-inspection{% if has_vehicles %} data-mihwar-vehicle{% endif %}>
   <div class="container">
-    <div class="mihwar-heading">
-      <div><span class="mihwar-kicker">{{ trans('mihwar.right_part') }}</span><h2>{{ component.title }}</h2></div>
-      <p>{{ component.description }}</p>
+    <div class="mihwar-section-heading">
+      <div>
+        <h2>{{ component.title }}</h2>
+      </div>
+      {% if component.description %}<p>{{ component.description }}</p>{% endif %}
     </div>
+
     <div class="mihwar-fitment__panel">
-      <label for="vehicle-{{ componentId }}">{{ trans('mihwar.choose_vehicle') }}</label>
-      <select id="vehicle-{{ componentId }}">
-        <option value="">{{ trans('mihwar.select_vehicle') }}</option>
-        {% for vehicle in component.vehicles %}
-          <option value="{{ loop.index }}" data-url="{{ vehicle.url }}">{{ vehicle.make }} — {{ vehicle.model }} — {{ vehicle.year }}</option>
-        {% endfor %}
-      </select>
-      <button type="button" class="mihwar-button" data-vehicle-go disabled>{{ trans('mihwar.show_compatible') }}</button>
-      <small>{{ trans('mihwar.fitment_note') }}</small>
+      {% if has_vehicles %}
+      <div class="mihwar-fitment__control">
+        <label for="vehicle-{{ componentId }}">{{ trans('mihwar.choose_vehicle') }}</label>
+        <div class="mihwar-select-wrap">
+          <select id="vehicle-{{ componentId }}" name="vehicle" autocomplete="off">
+            <option value="">{{ trans('mihwar.select_vehicle') }}</option>
+            {% for vehicle in component.vehicles %}
+              <option value="{{ loop.index }}" data-url="{{ vehicle.url|e('html_attr') }}">{{ vehicle.make }} · {{ vehicle.model }} · {{ vehicle.year }}</option>
+            {% endfor %}
+          </select>
+          <i class="sicon-keyboard_arrow_down" aria-hidden="true"></i>
+        </div>
+      </div>
+      <button type="button" class="mihwar-button" data-vehicle-go disabled>
+        {{ trans('mihwar.show_compatible') }}
+        <i class="sicon-arrow-left" aria-hidden="true"></i>
+      </button>
+      {% else %}
+        <div class="mihwar-fitment__empty">
+          <strong>{{ trans('mihwar.vehicle_empty_title') }}</strong>
+          <p>{{ trans('mihwar.vehicle_empty_text') }}</p>
+        </div>
+        <a class="mihwar-button" href="{{ link('products') }}">
+          {{ trans('mihwar.shop_all') }}
+          <i class="sicon-arrow-left" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+      <p class="mihwar-fitment__note"><i class="sicon-info" aria-hidden="true"></i>{{ trans('mihwar.fitment_note') }}</p>
     </div>
   </div>
 </section>

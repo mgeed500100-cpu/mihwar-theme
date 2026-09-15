@@ -1,23 +1,49 @@
-{% set hero_image = component.image %}
-<section component-id="{{ componentId }}" class="mihwar-hero" data-mihwar-reveal>
-  <div class="mihwar-hero__media"{% if hero_image %} style="background-image:url('{{ hero_image }}')"{% endif %}></div>
-  <div class="mihwar-hero__grid" aria-hidden="true"></div>
-  <div class="container mihwar-hero__content">
+{% set hero_image = component.image ?: ('images/mihwar-inspection-car.webp' | asset) %}
+<section component-id="{{ componentId }}" class="mihwar-hero" data-mihwar-inspection>
+  <div class="mihwar-hero__ticks" aria-hidden="true"></div>
+  <div class="container mihwar-hero__layout">
     <div class="mihwar-hero__copy">
-      {% if component.badge %}<span class="mihwar-kicker">{{ component.badge }}</span>{% endif %}
       <h2>{{ component.title }}</h2>
-      <p>{{ component.description }}</p>
+      {% if component.description %}<p>{{ component.description }}</p>{% endif %}
+
+      <div class="mihwar-search-console" role="search" aria-labelledby="mihwar-search-title-{{ componentId }}">
+        <div class="mihwar-search-console__heading">
+          <div>
+            <strong id="mihwar-search-title-{{ componentId }}">{{ trans('mihwar.search_console_title') }}</strong>
+            <small>{{ trans('mihwar.search_console_hint') }}</small>
+          </div>
+        </div>
+        <salla-search data-testid="mihwar-hero-search" inline height="58"></salla-search>
+      </div>
+
       <div class="mihwar-hero__actions">
-        <button type="button" class="mihwar-button" data-mihwar-search>
-          <i class="sicon-search"></i> {{ component.cta|default(trans('mihwar.search_parts')) }}
-        </button>
-        <a class="mihwar-button mihwar-button--ghost" href="{{ link('products') }}">{{ trans('mihwar.shop_all') }}</a>
+        <a class="mihwar-button" href="{{ link('products') }}">
+          {{ component.cta ?: trans('mihwar.shop_all') }}
+          <i class="sicon-arrow-left" aria-hidden="true"></i>
+        </a>
+        <a class="mihwar-text-link" href="#mihwar-vehicle-finder">
+          {{ trans('mihwar.choose_vehicle_action') }}
+          <i class="sicon-arrow-down" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
-    <div class="mihwar-hero__specs" aria-label="{{ trans('mihwar.store_advantages') }}">
-      <span><strong>+10K</strong>{{ trans('mihwar.available_parts') }}</span>
-      <span><strong>24h</strong>{{ trans('mihwar.fast_dispatch') }}</span>
-      <span><strong>100%</strong>{{ trans('mihwar.secure_purchase') }}</span>
+
+    <div class="mihwar-inspection" role="group" aria-label="{{ trans('mihwar.inspection_stage') }}">
+      <div class="mihwar-inspection__head">
+        <span>{{ trans('mihwar.inspection_mode') }}</span>
+        <span class="mihwar-inspection__ready"><i aria-hidden="true"></i>{{ trans('mihwar.system_ready') }}</span>
+      </div>
+      <div class="mihwar-inspection__viewport">
+        <span class="mihwar-inspection__axis mihwar-inspection__axis--x" aria-hidden="true"></span>
+        <span class="mihwar-inspection__axis mihwar-inspection__axis--y" aria-hidden="true"></span>
+        <span class="mihwar-inspection__scan" aria-hidden="true"></span>
+        <img src="{{ hero_image }}" width="1400" height="933" fetchpriority="high" alt="">
+      </div>
+      <ul class="mihwar-inspection__capabilities" aria-label="{{ trans('mihwar.discovery_tools') }}">
+        <li>{{ trans('mihwar.direct_search') }}</li>
+        <li>{{ trans('mihwar.part_number') }}</li>
+        <li>{{ trans('mihwar.vehicle_guide') }}</li>
+      </ul>
     </div>
   </div>
 </section>

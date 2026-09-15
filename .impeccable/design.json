@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-13T07:47:27Z",
+  "title": "Design System: Mihwar",
+  "extensions": {
+    "colorMeta": {
+      "accent": { "role": "primary", "displayName": "Merchant Signal Orange", "canonical": "#f26419", "tonalRamp": ["oklch(0.15 0.058 42.9)", "oklch(0.27 0.089 42.9)", "oklch(0.39 0.119 42.9)", "oklch(0.51 0.150 42.9)", "oklch(0.63 0.140 42.9)", "oklch(0.75 0.109 42.9)", "oklch(0.87 0.079 42.9)", "oklch(0.95 0.058 42.9)"] },
+      "accent-strong": { "role": "primary", "displayName": "Strong Merchant Orange", "canonical": "#d94e0b", "tonalRamp": ["oklch(0.15 0.058 40.1)", "oklch(0.27 0.089 40.1)", "oklch(0.39 0.119 40.1)", "oklch(0.51 0.150 40.1)", "oklch(0.63 0.140 40.1)", "oklch(0.75 0.109 40.1)", "oklch(0.87 0.079 40.1)", "oklch(0.95 0.058 40.1)"] },
+      "signal": { "role": "secondary", "displayName": "Fixed Safety Signal", "canonical": "#ff7a3d", "tonalRamp": ["oklch(0.15 0.058 43.2)", "oklch(0.27 0.089 43.2)", "oklch(0.39 0.119 43.2)", "oklch(0.51 0.150 43.2)", "oklch(0.63 0.140 43.2)", "oklch(0.75 0.109 43.2)", "oklch(0.87 0.079 43.2)", "oklch(0.95 0.058 43.2)"] },
+      "ink": { "role": "neutral", "displayName": "Workshop Ink", "canonical": "#101315", "tonalRamp": ["oklch(0.15 0.006 236.9)", "oklch(0.27 0.006 236.9)", "oklch(0.39 0.006 236.9)", "oklch(0.51 0.006 236.9)", "oklch(0.63 0.006 236.9)", "oklch(0.75 0.006 236.9)", "oklch(0.87 0.006 236.9)", "oklch(0.95 0.006 236.9)"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite Bay", "canonical": "#171b1e", "tonalRamp": ["oklch(0.15 0.008 240.3)", "oklch(0.27 0.008 240.3)", "oklch(0.39 0.008 240.3)", "oklch(0.51 0.008 240.3)", "oklch(0.63 0.008 240.3)", "oklch(0.75 0.008 240.3)", "oklch(0.87 0.008 240.3)", "oklch(0.95 0.008 240.3)"] },
+      "panel": { "role": "neutral", "displayName": "Equipment Panel", "canonical": "#202529", "tonalRamp": ["oklch(0.15 0.010 242.1)", "oklch(0.27 0.010 242.1)", "oklch(0.39 0.010 242.1)", "oklch(0.51 0.010 242.1)", "oklch(0.63 0.010 242.1)", "oklch(0.75 0.010 242.1)", "oklch(0.87 0.010 242.1)", "oklch(0.95 0.010 242.1)"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f3f2ee", "tonalRamp": ["oklch(0.15 0.005 95.1)", "oklch(0.27 0.005 95.1)", "oklch(0.39 0.005 95.1)", "oklch(0.51 0.005 95.1)", "oklch(0.63 0.005 95.1)", "oklch(0.75 0.005 95.1)", "oklch(0.87 0.005 95.1)", "oklch(0.95 0.005 95.1)"] },
+      "white": { "role": "neutral", "displayName": "Metal White", "canonical": "#fffdfa", "tonalRamp": ["oklch(0.15 0.005 78.3)", "oklch(0.27 0.005 78.3)", "oklch(0.39 0.005 78.3)", "oklch(0.51 0.005 78.3)", "oklch(0.63 0.005 78.3)", "oklch(0.75 0.005 78.3)", "oklch(0.87 0.005 78.3)", "oklch(0.95 0.005 78.3)"] },
+      "muted": { "role": "neutral", "displayName": "Instrument Muted", "canonical": "#aeb4b7", "tonalRamp": ["oklch(0.15 0.008 228.9)", "oklch(0.27 0.008 228.9)", "oklch(0.39 0.008 228.9)", "oklch(0.51 0.008 228.9)", "oklch(0.63 0.008 228.9)", "oklch(0.75 0.008 228.9)", "oklch(0.87 0.008 228.9)", "oklch(0.95 0.008 228.9)"] },
+      "copy": { "role": "neutral", "displayName": "Technical Copy", "canonical": "#5d6569", "tonalRamp": ["oklch(0.15 0.012 229.1)", "oklch(0.27 0.012 229.1)", "oklch(0.39 0.012 229.1)", "oklch(0.51 0.012 229.1)", "oklch(0.63 0.012 229.1)", "oklch(0.75 0.012 229.1)", "oklch(0.87 0.012 229.1)", "oklch(0.95 0.012 229.1)"] },
+      "copy-soft": { "role": "neutral", "displayName": "Soft Technical Copy", "canonical": "#656c70", "tonalRamp": ["oklch(0.15 0.011 232.5)", "oklch(0.27 0.011 232.5)", "oklch(0.39 0.011 232.5)", "oklch(0.51 0.011 232.5)", "oklch(0.63 0.011 232.5)", "oklch(0.75 0.011 232.5)", "oklch(0.87 0.011 232.5)", "oklch(0.95 0.011 232.5)"] },
+      "control": { "role": "neutral", "displayName": "Control White", "canonical": "#f8f7f3", "tonalRamp": ["oklch(0.15 0.005 95.1)", "oklch(0.27 0.005 95.1)", "oklch(0.39 0.005 95.1)", "oklch(0.51 0.005 95.1)", "oklch(0.63 0.005 95.1)", "oklch(0.75 0.005 95.1)", "oklch(0.87 0.005 95.1)", "oklch(0.95 0.005 95.1)"] },
+      "card-image": { "role": "neutral", "displayName": "Card Image Metal", "canonical": "#ebeae5", "tonalRamp": ["oklch(0.15 0.007 97.4)", "oklch(0.27 0.007 97.4)", "oklch(0.39 0.007 97.4)", "oklch(0.51 0.007 97.4)", "oklch(0.63 0.007 97.4)", "oklch(0.75 0.007 97.4)", "oklch(0.87 0.007 97.4)", "oklch(0.95 0.007 97.4)"] },
+      "hover": { "role": "neutral", "displayName": "Warm Hover", "canonical": "#f9f7f1", "tonalRamp": ["oklch(0.15 0.008 91.5)", "oklch(0.27 0.008 91.5)", "oklch(0.39 0.008 91.5)", "oklch(0.51 0.008 91.5)", "oklch(0.63 0.008 91.5)", "oklch(0.75 0.008 91.5)", "oklch(0.87 0.008 91.5)", "oklch(0.95 0.008 91.5)"] },
+      "success": { "role": "secondary", "displayName": "Ready Green", "canonical": "#6fd08c", "tonalRamp": ["oklch(0.15 0.058 151.9)", "oklch(0.27 0.089 151.9)", "oklch(0.39 0.119 151.9)", "oklch(0.51 0.134 151.9)", "oklch(0.63 0.134 151.9)", "oklch(0.75 0.109 151.9)", "oklch(0.87 0.079 151.9)", "oklch(0.95 0.058 151.9)"] },
+      "line": { "role": "neutral", "displayName": "Light Line", "canonical": "rgba(255, 253, 250, .14)", "tonalRamp": ["oklch(0.15 0.005 78.3 / .14)", "oklch(0.27 0.005 78.3 / .14)", "oklch(0.39 0.005 78.3 / .14)", "oklch(0.51 0.005 78.3 / .14)", "oklch(0.63 0.005 78.3 / .14)", "oklch(0.75 0.005 78.3 / .14)", "oklch(0.87 0.005 78.3 / .14)", "oklch(0.95 0.005 78.3 / .14)"] },
+      "line-dark": { "role": "neutral", "displayName": "Dark Line", "canonical": "rgba(16, 19, 21, .14)", "tonalRamp": ["oklch(0.15 0.006 236.9 / .14)", "oklch(0.27 0.006 236.9 / .14)", "oklch(0.39 0.006 236.9 / .14)", "oklch(0.51 0.006 236.9 / .14)", "oklch(0.63 0.006 236.9 / .14)", "oklch(0.75 0.006 236.9 / .14)", "oklch(0.87 0.006 236.9 / .14)", "oklch(0.95 0.006 236.9 / .14)"] },
+      "grid": { "role": "neutral", "displayName": "Measurement Grid", "canonical": "rgba(255, 253, 250, .035)", "tonalRamp": ["oklch(0.15 0.005 78.3 / .035)", "oklch(0.27 0.005 78.3 / .035)", "oklch(0.39 0.005 78.3 / .035)", "oklch(0.51 0.005 78.3 / .035)", "oklch(0.63 0.005 78.3 / .035)", "oklch(0.75 0.005 78.3 / .035)", "oklch(0.87 0.005 78.3 / .035)", "oklch(0.95 0.005 78.3 / .035)"] },
+      "grid-strong": { "role": "neutral", "displayName": "Measurement Tick", "canonical": "rgba(255, 253, 250, .35)", "tonalRamp": ["oklch(0.15 0.005 78.3 / .35)", "oklch(0.27 0.005 78.3 / .35)", "oklch(0.39 0.005 78.3 / .35)", "oklch(0.51 0.005 78.3 / .35)", "oklch(0.63 0.005 78.3 / .35)", "oklch(0.75 0.005 78.3 / .35)", "oklch(0.87 0.005 78.3 / .35)", "oklch(0.95 0.005 78.3 / .35)"] },
+      "overlay": { "role": "neutral", "displayName": "Workshop Overlay", "canonical": "rgba(10, 12, 13, .96)", "tonalRamp": ["oklch(0.15 0.004 229.1 / .96)", "oklch(0.27 0.004 229.1 / .96)", "oklch(0.39 0.004 229.1 / .96)", "oklch(0.51 0.004 229.1 / .96)", "oklch(0.63 0.004 229.1 / .96)", "oklch(0.75 0.004 229.1 / .96)", "oklch(0.87 0.004 229.1 / .96)", "oklch(0.95 0.004 229.1 / .96)"] },
+      "overlay-clear": { "role": "neutral", "displayName": "Clear Workshop Overlay", "canonical": "rgba(10, 12, 13, .08)", "tonalRamp": ["oklch(0.15 0.004 229.1 / .08)", "oklch(0.27 0.004 229.1 / .08)", "oklch(0.39 0.004 229.1 / .08)", "oklch(0.51 0.004 229.1 / .08)", "oklch(0.63 0.004 229.1 / .08)", "oklch(0.75 0.004 229.1 / .08)", "oklch(0.87 0.004 229.1 / .08)", "oklch(0.95 0.004 229.1 / .08)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Short hero headlines only; keep the measure near 12 characters." },
+      "headline": { "displayName": "Headline", "purpose": "Section and product titles with balanced wrapping." },
+      "body-prominent": { "displayName": "Prominent Body", "purpose": "Leading explanation on the hero and other primary surfaces." },
+      "body": { "displayName": "Body", "purpose": "Controls, empty states, notes, and practical product guidance." },
+      "label": { "displayName": "Instrument Label", "purpose": "Compact inspection statuses and technical metadata." },
+      "button": { "displayName": "Action Label", "purpose": "Heavy, compact text for primary actions." }
+    },
+    "shadows": [
+      { "name": "ambient-lift", "value": "0 18px 48px rgba(16, 19, 21, .12)", "purpose": "Diffuse lift for the vehicle panel and fine-pointer product-card hover only." }
+    ],
+    "motion": [
+      { "name": "ease-calibrated", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Spatial movement and the inspection scan." },
+      { "name": "routine-fast", "value": "160ms", "purpose": "Color, border, skip-link, and compact state response." },
+      { "name": "routine-standard", "value": "180ms–240ms", "purpose": "Hover lift, border, and shadow transitions." },
+      { "name": "image-settle", "value": "700ms", "purpose": "One-time inspection image settling movement." },
+      { "name": "inspection-scan", "value": "850ms", "purpose": "One calibrated measurement sweep after entry or focus; removed under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact-plus", "value": "40rem" },
+      { "name": "wide", "value": "64rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The compact, decisive default action used on light surfaces.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">عرض المنتجات</button>",
+      "css": ".ds-btn-primary { display:inline-flex; min-height:3rem; align-items:center; justify-content:center; padding-inline:1.25rem; border:1px solid var(--mihwar-ink, #101315); border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-ink, #101315); color:var(--mihwar-white, #fffdfa); font-family:var(--font-main, sans-serif); font-weight:900; cursor:pointer; transition:background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 180ms cubic-bezier(.16, 1, .3, 1); } .ds-btn-primary:hover { border-color:var(--mihwar-graphite, #171b1e); background:var(--mihwar-graphite, #171b1e); transform:translateY(-2px); } .ds-btn-primary:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); } .ds-btn-primary:active { transform:translateY(0); } .ds-btn-primary:disabled { cursor:not-allowed; opacity:.48; transform:none; }"
+    },
+    {
+      "name": "Hero Button",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "The light inverse action for the dark diagnostic stage.",
+      "html": "<div class=\"ds-hero-surface\" dir=\"rtl\"><button class=\"ds-btn-hero\" type=\"button\">تسوق الآن</button></div>",
+      "css": ".ds-hero-surface { padding:1.5rem; background:var(--mihwar-ink, #101315); } .ds-btn-hero { display:inline-flex; min-height:3rem; align-items:center; justify-content:center; padding-inline:1.25rem; border:1px solid var(--mihwar-white, #fffdfa); border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-white, #fffdfa); color:var(--mihwar-ink, #101315); font-family:var(--font-main, sans-serif); font-weight:900; cursor:pointer; transition:background-color 160ms ease, border-color 160ms ease, transform 180ms cubic-bezier(.16, 1, .3, 1); } .ds-btn-hero:hover { border-color:var(--mihwar-paper, #f3f2ee); background:var(--mihwar-paper, #f3f2ee); transform:translateY(-2px); } .ds-btn-hero:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); } .ds-btn-hero:active { transform:translateY(0); }"
+    },
+    {
+      "name": "Search Console",
+      "kind": "input",
+      "refersTo": "search-console",
+      "description": "The operational search surface that leads the first viewport.",
+      "html": "<div class=\"ds-search-stage\" dir=\"rtl\"><div class=\"ds-search-console\"><div class=\"ds-search-heading\"><strong>بحث مباشر</strong><small>ابحث باسم القطعة أو رقمها</small></div><input class=\"ds-search-input\" type=\"search\" aria-label=\"بحث مباشر\" placeholder=\"اسم القطعة أو رقمها\"></div></div>",
+      "css": ".ds-search-stage { padding:1.5rem; background:var(--mihwar-ink, #101315); color:var(--mihwar-white, #fffdfa); font-family:var(--font-main, sans-serif); } .ds-search-console { max-width:42rem; padding:1rem; border:1px solid rgba(255,253,250,.14); border-block-start:2px solid var(--mihwar-accent, #f26419); border-radius:var(--mihwar-radius-sm, 4px); background:color-mix(in srgb, var(--mihwar-white, #fffdfa) 5.5%, transparent); transition:border-color 160ms ease, background-color 160ms ease; } .ds-search-console:focus-within { border-color:color-mix(in srgb, var(--mihwar-accent, #f26419) 72%, transparent); background:color-mix(in srgb, var(--mihwar-white, #fffdfa) 7.5%, transparent); } .ds-search-heading { display:flex; flex-direction:column; gap:.15rem; margin-block-end:.9rem; } .ds-search-heading strong { font-size:.9rem; } .ds-search-heading small { color:var(--mihwar-muted, #aeb4b7); font-size:.75rem; } .ds-search-input { width:100%; min-height:3.625rem; padding-inline:1rem; border:0; border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-white, #fffdfa); color:var(--mihwar-ink, #101315); font:inherit; } .ds-search-input:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); }"
+    },
+    {
+      "name": "Vehicle Select",
+      "kind": "input",
+      "refersTo": "vehicle-select",
+      "description": "A labeled route selector with a disabled action until a configured vehicle is chosen.",
+      "html": "<div class=\"ds-vehicle-panel\" dir=\"rtl\"><label class=\"ds-vehicle-label\" for=\"ds-vehicle\">اختر مركبتك</label><div class=\"ds-select-wrap\"><select class=\"ds-vehicle-select\" id=\"ds-vehicle\"><option>حدد المركبة</option></select><span class=\"ds-select-mark\" aria-hidden=\"true\">⌄</span></div><button class=\"ds-vehicle-action\" type=\"button\" disabled>عرض النتائج</button></div>",
+      "css": ".ds-vehicle-panel { display:grid; gap:1rem; padding:clamp(1rem, 3vw, 2rem); border:1px solid rgba(16,19,21,.14); border-block-start:3px solid var(--mihwar-accent, #f26419); background:var(--mihwar-white, #fffdfa); color:var(--mihwar-ink, #101315); box-shadow:0 18px 48px rgba(16,19,21,.12); font-family:var(--font-main, sans-serif); } .ds-vehicle-label { font-size:.8rem; font-weight:900; } .ds-select-wrap { position:relative; } .ds-vehicle-select { width:100%; min-height:3.25rem; padding-inline:1rem 2.75rem; border:1px solid rgba(16,19,21,.14); border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-control, #f8f7f3); color:var(--mihwar-ink, #101315); font:inherit; } .ds-select-mark { position:absolute; inset-inline-end:1rem; inset-block-start:50%; transform:translateY(-50%); pointer-events:none; } .ds-vehicle-select:focus-visible, .ds-vehicle-action:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); } .ds-vehicle-action { min-height:3rem; padding-inline:1.25rem; border:1px solid var(--mihwar-ink, #101315); border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-ink, #101315); color:var(--mihwar-white, #fffdfa); font:inherit; font-weight:900; opacity:.48; }"
+    },
+    {
+      "name": "Vehicle Empty State",
+      "kind": "custom",
+      "description": "The honest fallback when a merchant has not configured vehicle routes.",
+      "html": "<div class=\"ds-empty-panel\" dir=\"rtl\"><div class=\"ds-empty-copy\"><strong>لم تتم إضافة مركبات بعد</strong><p>يمكنك متابعة التصفح والبحث باسم القطعة أو رقمها.</p></div><a class=\"ds-empty-action\" href=\"#\">عرض جميع المنتجات</a></div>",
+      "css": ".ds-empty-panel { display:grid; gap:1rem; align-items:end; padding:clamp(1rem, 3vw, 2rem); border:1px solid rgba(16,19,21,.14); border-block-start:3px solid var(--mihwar-accent, #f26419); background:var(--mihwar-white, #fffdfa); color:var(--mihwar-ink, #101315); box-shadow:0 18px 48px rgba(16,19,21,.12); font-family:var(--font-main, sans-serif); } .ds-empty-copy strong { display:block; margin-block-end:.35rem; font-size:1rem; } .ds-empty-copy p { max-width:42rem; margin:0; color:var(--mihwar-copy, #5d6569); line-height:1.75; } .ds-empty-action { display:inline-flex; min-height:3rem; align-items:center; justify-content:center; padding-inline:1.25rem; border:1px solid var(--mihwar-ink, #101315); border-radius:var(--mihwar-radius-sm, 4px); background:var(--mihwar-ink, #101315); color:var(--mihwar-white, #fffdfa); font-weight:900; text-decoration:none; transition:background-color 160ms ease, transform 180ms cubic-bezier(.16, 1, .3, 1); } .ds-empty-action:hover { background:var(--mihwar-graphite, #171b1e); transform:translateY(-2px); } .ds-empty-action:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); }"
+    },
+    {
+      "name": "Inspection Frame",
+      "kind": "custom",
+      "description": "The signature measured vehicle viewport with honest capability labels and one scan.",
+      "html": "<div class=\"ds-inspection\" dir=\"rtl\"><div class=\"ds-inspection-head\"><span>وضع الفحص</span><span class=\"ds-ready\"><i aria-hidden=\"true\"></i>النظام جاهز</span></div><div class=\"ds-inspection-view\"><span class=\"ds-axis ds-axis-x\"></span><span class=\"ds-axis ds-axis-y\"></span><span class=\"ds-scan\"></span><svg class=\"ds-vehicle-art\" viewBox=\"0 0 320 140\" aria-hidden=\"true\"><path d=\"M48 92h224l-18-42H91L48 92Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M105 50l25-25h75l30 25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"96\" cy=\"96\" r=\"18\" fill=\"#171b1e\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"232\" cy=\"96\" r=\"18\" fill=\"#171b1e\" stroke=\"currentColor\" stroke-width=\"3\"/></svg></div><ul class=\"ds-capabilities\"><li>بحث مباشر</li><li>رقم القطعة</li><li>دليل المركبة</li></ul></div>",
+      "css": ".ds-inspection { overflow:hidden; border:1px solid rgba(255,253,250,.14); background:var(--mihwar-graphite, #171b1e); color:var(--mihwar-white, #fffdfa); font-family:var(--font-main, sans-serif); } .ds-inspection-head { display:flex; min-height:2.75rem; align-items:center; justify-content:space-between; gap:1rem; padding-inline:1rem; border-bottom:1px solid rgba(255,253,250,.14); color:var(--mihwar-muted, #aeb4b7); font-size:.72rem; font-weight:800; letter-spacing:.06em; } .ds-ready { display:inline-flex; align-items:center; gap:.45rem; color:var(--mihwar-white, #fffdfa); } .ds-ready i { width:.5rem; height:.5rem; border-radius:50%; background:var(--mihwar-success, #6fd08c); box-shadow:0 0 0 4px color-mix(in srgb, var(--mihwar-success, #6fd08c) 12%, transparent); } .ds-inspection-view { position:relative; min-height:17rem; overflow:hidden; background:linear-gradient(rgba(255,253,250,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,253,250,.035) 1px, transparent 1px); background-size:3rem 3rem; } .ds-vehicle-art { position:absolute; z-index:2; inset:50% auto auto 50%; width:78%; max-width:26rem; color:var(--mihwar-white, #fffdfa); transform:translate(-50%,-50%); } .ds-axis { position:absolute; z-index:1; background:var(--mihwar-accent, #f26419); opacity:.65; } .ds-axis-x { inset-inline:8%; inset-block-end:16%; height:1px; } .ds-axis-y { inset-inline-start:50%; inset-block:11% 14%; width:1px; } .ds-scan { position:absolute; z-index:3; inset-block:0; inset-inline-start:0; width:18%; border-inline-end:1px solid var(--mihwar-accent, #f26419); background:linear-gradient(90deg, transparent, color-mix(in srgb, var(--mihwar-accent, #f26419) 12%, transparent)); animation:ds-inspection-scan 850ms cubic-bezier(.16, 1, .3, 1) 120ms 1 both; } .ds-capabilities { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:0; padding:0; border-top:1px solid rgba(255,253,250,.14); list-style:none; } .ds-capabilities li { display:flex; min-height:3rem; align-items:center; justify-content:center; padding:.5rem; border-inline-end:1px solid rgba(255,253,250,.14); color:var(--mihwar-muted, #aeb4b7); font-size:.68rem; font-weight:700; } .ds-capabilities li:last-child { border-inline-end:0; } .ds-inspection:focus-within { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); } @keyframes ds-inspection-scan { 0% { opacity:0; transform:translateX(120%); } 12%,88% { opacity:1; } 100% { opacity:0; transform:translateX(-620%); } } @media (prefers-reduced-motion:reduce) { .ds-scan { display:none; } }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "product-card",
+      "description": "A restrained catalog card that stays flat until fine-pointer hover.",
+      "html": "<article class=\"ds-product-card\" dir=\"rtl\"><div class=\"ds-product-image\" aria-hidden=\"true\"><span>صورة المنتج</span></div><div class=\"ds-product-content\"><a href=\"#\">اسم القطعة</a><small>رقم القطعة</small></div></article>",
+      "css": ".ds-product-card { overflow:hidden; border:1px solid rgba(16,19,21,.14); border-radius:var(--mihwar-radius-md, 10px); background:var(--mihwar-white, #fffdfa); color:var(--mihwar-ink, #101315); box-shadow:none; font-family:var(--font-main, sans-serif); transition:border-color 180ms ease, box-shadow 240ms ease, transform 240ms cubic-bezier(.16, 1, .3, 1); } .ds-product-image { display:grid; min-height:10rem; place-items:center; background:var(--mihwar-card-image, #ebeae5); color:var(--mihwar-copy, #5d6569); } .ds-product-content { display:flex; flex-direction:column; gap:.35rem; padding:1rem; } .ds-product-content a { color:inherit; font-weight:800; line-height:1.55; text-decoration:none; } .ds-product-content small { color:var(--mihwar-copy, #5d6569); font-variant-numeric:tabular-nums; } .ds-product-card:hover { border-color:color-mix(in srgb, var(--mihwar-accent, #f26419) 45%, transparent); box-shadow:0 18px 48px rgba(16,19,21,.12); transform:translateY(-4px); } .ds-product-content a:focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); } @media (prefers-reduced-motion:reduce) { .ds-product-card { transform:none; transition-duration:0ms; } }"
+    },
+    {
+      "name": "Navigation and Focus",
+      "kind": "nav",
+      "description": "A familiar flat storefront navigation with the global two-layer keyboard ring.",
+      "html": "<nav class=\"ds-nav\" dir=\"rtl\" aria-label=\"التنقل الرئيسي\"><a class=\"ds-brand\" href=\"#\">محور</a><div class=\"ds-nav-links\"><a href=\"#\">المنتجات</a><a href=\"#\">الفئات</a><button type=\"button\">بحث</button></div></nav>",
+      "css": ".ds-nav { display:flex; min-height:4rem; align-items:center; justify-content:space-between; gap:1rem; padding-inline:1rem; border-bottom:1px solid rgba(255,253,250,.14); background:var(--mihwar-ink, #101315); color:var(--mihwar-white, #fffdfa); font-family:var(--font-main, sans-serif); } .ds-brand { color:inherit; font-size:1.25rem; font-weight:950; text-decoration:none; } .ds-nav-links { display:flex; align-items:center; gap:1rem; } .ds-nav-links a, .ds-nav-links button { display:inline-flex; min-height:2.75rem; align-items:center; border:0; background:transparent; color:inherit; font:inherit; font-weight:800; text-decoration:none; text-underline-offset:.35rem; cursor:pointer; } .ds-nav-links a:hover, .ds-nav-links button:hover { color:var(--mihwar-accent, #f26419); text-decoration:underline; } .ds-nav :where(a,button):focus-visible { outline:2px solid var(--mihwar-white, #fffdfa); outline-offset:2px; box-shadow:0 0 0 4px var(--mihwar-ink, #101315); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "منصة الفحص / The Inspection Bench",
+    "overview": "Mihwar should feel like a live automotive test bench: precise, technical, premium, and fast. Graphite test-bay surfaces, warm metal whites, calibrated rails, compact labels, and one controlled orange signal make product discovery feel operational rather than ornamental.\n\nThe system is Arabic-first and mobile-first, with complete LTR equivalence. Interfaces place search, vehicle guidance, practical product detail, and honest status information ahead of spectacle; the result is a focused parts counter rather than a cinematic car poster or a generic ecommerce skin.",
+    "keyCharacteristics": [
+      "High-contrast graphite and warm-paper surfaces.",
+      "A single controlled orange signal with merchant-controlled accent ownership.",
+      "Squared controls, restrained curves, thin rails, ticks, and tabular numeric detail.",
+      "Dense enough to feel technical, spacious enough to scan quickly.",
+      "Short axis movement and one calibrated scan instead of ambient visual effects."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Use orange as a diagnostic signal, not as broad decoration; large surfaces remain graphite, paper, or white.", "section": "colors" },
+      { "name": "The Merchant Accent Rule", "body": "Commerce emphasis follows the configured merchant accent, while the fixed safety signal remains reserved for system feedback.", "section": "colors" },
+      { "name": "The Arabic-First Rule", "body": "Use the configured `--font-main` throughout; do not introduce a decorative Latin display face that weakens Arabic parity.", "section": "typography" },
+      { "name": "The Short Display Rule", "body": "Reserve the tightest tracking and leading for brief, balanced headlines; long explanatory content uses the body rhythm.", "section": "typography" },
+      { "name": "The Task-First Breakpoint Rule", "body": "On small screens, search and the next usable action precede visual inspection; wider layouts may place the inspection frame beside them, never ahead of them.", "section": "layout" },
+      { "name": "The Tonal-First Rule", "body": "Establish hierarchy with surface contrast and borders before reaching for shadow.", "section": "elevation" },
+      { "name": "The No Glow Rule", "body": "Do not use neon bloom, frosted glass, or glow-heavy cyber effects; the inspection language comes from measured geometry and honest state.", "section": "elevation" },
+      { "name": "The Restrained Curve Rule", "body": "Default to the smallest radius and increase it only when the component already establishes that role; never turn the system into pill-shaped generic commerce UI.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do lead mobile surfaces with search, selection, or another usable shopping action.",
+      "Do use graphite, paper, borders, rails, ticks, and compact labels to create the technical atmosphere.",
+      "Do preserve Arabic RTL and English LTR equivalence with logical layout properties.",
+      "Do keep routine motion between 160ms and 240ms, using the calibrated easing curve for spatial movement.",
+      "Do use honest labels and configured routes when vehicle data or commercial proof is unavailable."
+    ],
+    "donts": [
+      "Don't turn the hero into a cinematic car poster that delays product discovery.",
+      "Don't use glow-heavy cyber effects, frosted glass, or generic glass panels.",
+      "Don't spread orange across large backgrounds or introduce competing accent colors.",
+      "Don't default to pill controls, oversized rounding, or generic ecommerce cards.",
+      "Don't claim real vehicle-to-part fitment, statistics, testimonials, or proof that the product does not supply."
+    ]
+  }
+}

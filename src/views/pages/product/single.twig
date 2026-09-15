@@ -249,9 +249,9 @@
                         </article>
 
                         {# Read More Button #}
-                        <a id="btn-show-more" class="link--primary inline-block mt-2 cursor-pointer">
+                        <button id="btn-show-more" type="button" class="link--primary inline-block mt-2 cursor-pointer">
                             {{ trans('pages.products.read_more') }}
-                        </a>
+                        </button>
                     {% else %}
                         <article class="article--main pb-1">
                             {{ product_desc|raw }}
@@ -320,6 +320,13 @@
                         <div class="text-unicode product-barcode">{{ product.barcode }}</div>
                     </div>
                 {% endif %}
+                <aside class="mihwar-fitment-warning" aria-label="{{ trans('mihwar.fitment_warning_title') }}">
+                    <i class="sicon-shield-check" aria-hidden="true"></i>
+                    <div>
+                        <strong>{{ trans('mihwar.fitment_warning_title') }}</strong>
+                        <p>{{ trans('mihwar.fitment_warning_text') }}</p>
+                    </div>
+                </aside>
                 {% hook 'product:single.description' %}
 
                 {# Installment Methods #}
@@ -337,12 +344,12 @@
                             </label>
                             <div class="mt-1 sm:mt-0 sm:col-span-2 text-end">
                                 <div class="flex rtl:space-x-reverse space-x-3">
-                                    <a href="#!"
+                                    <button type="button"
                                        onclick="salla.event.dispatch('scopes::open', {mode: 'availability', product_id: '{{ product.id }}' })"
                                        class="group text-primary flex items-center justify-center">
                                         <span>{{ trans('pages.products.select_branch') }}</span>
-                                        <span class="sicon-keyboard_arrow_left mr-2 transition-all group-hover:-translate-x-1"></span>
-                                    </a>
+                                        <span class="sicon-keyboard_arrow_left mr-2 transition-transform group-hover:-translate-x-1" aria-hidden="true"></span>
+                                    </button>
                                 </div>
                             </div>
                         </div>

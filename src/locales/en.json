@@ -12,7 +12,7 @@
       "cart_options": "Cart Options"
     },
     "products": {
-      "barcode": "الباركود"
+      "barcode": "Barcode"
     },
     "order": {
       "can_edit_or_delete_your_review_within": "You can edit or delete your review within",
@@ -29,22 +29,37 @@
   },
   "mihwar": {
     "search_parts": "Find your part",
-    "shop_all": "Shop all parts",
-    "store_advantages": "Store advantages",
-    "available_parts": "available parts",
-    "fast_dispatch": "fast dispatch",
-    "secure_purchase": "secure purchase",
+    "shop_all": "Browse all products",
+    "search_console_title": "Start with the part",
+    "search_console_hint": "Enter a product name or part number",
+    "choose_vehicle_action": "Or start with your vehicle",
+    "inspection_stage": "Product discovery station",
+    "inspection_mode": "Inspection mode",
+    "system_ready": "Ready to search",
+    "discovery_tools": "Product discovery methods",
+    "direct_search": "Direct search",
+    "part_number": "Part number",
+    "vehicle_guide": "Vehicle guide",
+    "fitment_warning_title": "Confirm part fitment",
+    "fitment_warning_text": "Check the part number, specifications, and VIN before ordering. Contact the store if you need help.",
+    "open_filters": "Open product filters",
+    "close_filters": "Close product filters",
+    "skip_to_content": "Skip to main content",
+    "javascript_required": "Enable JavaScript to use every storefront feature.",
     "right_part": "The right fit",
     "choose_vehicle": "Your vehicle",
     "select_vehicle": "Choose make, model and year",
-    "show_compatible": "Show compatible parts",
-    "fitment_note": "Compatibility follows the links and categories configured by the merchant; verify the VIN when needed.",
+    "show_compatible": "Open selected results",
+    "fitment_note": "This tool opens a category or search result configured by the merchant. Verify part fitment and the VIN before ordering.",
     "quick_access": "Quick access",
     "explore_category": "Explore category",
     "curated_parts": "Curated picks",
     "search_by_sku": "Search by part number",
     "compare_title": "Compare with confidence",
     "compare_description": "Place products side-by-side when the store comparison feature is enabled.",
-    "trusted_names": "Trusted quality"
+    "trusted_names": "Trusted quality",
+    "open_menu": "Open menu",
+    "vehicle_empty_title": "No vehicles added yet",
+    "vehicle_empty_text": "Browse all products, or use the search above to find your part."
   }
 }

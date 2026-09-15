@@ -38,9 +38,9 @@
 
           {# Scopes | Branches #}
           {% if store.scope %}
-              <button class="btn--rounded-gray"
+              <button type="button" class="btn--rounded-gray"
                       onclick="salla.event.dispatch('scopes::open', {'mode': 'default'})">
-                  <i class="sicon-location rtl:ml-1 ltr:mr-1"></i> {{ store.scope.name }}
+                  <i class="sicon-location rtl:ml-1 ltr:mr-1" aria-hidden="true"></i> {{ store.scope.name }}
               </button>
           {% endif %}
 
@@ -60,8 +60,8 @@
           <div class="container">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">
-                      <a data-testid="store-header-mobile-toggle" class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="Open-menu">
-                        <i class="sicon-menu text-primary text-2xl"></i>
+                      <a data-testid="store-header-mobile-toggle" class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="{{ trans('mihwar.open_menu') }}">
+                        <i class="sicon-menu text-primary text-2xl" aria-hidden="true"></i>
                       </a>
                       <a data-testid="store-header-logo" class="navbar-brand" href="{{ store.url }}">
                           <img fetchpriority="high" width="100%" height="100%" loading="eager" src="{{ store.logo|cdn(175) }}" alt="{{ store.name }} logo">
